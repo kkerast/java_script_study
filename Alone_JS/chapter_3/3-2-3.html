@@ -1,0 +1,21 @@
+<script>
+	const rawInput = prompt('태어난 해를 입력해주세요.','');
+    const year = Number(rawInput)
+
+    let 간
+    
+    let gan = ["경","신","임","계","갑","을","병","정","무","기"]
+    g = year % 10
+    //g + 6 > 9 ? g = ( g + 6 ) % 10 : g = g + 6
+    간 = gan[g]
+
+
+    let 띠
+    let animal = ["신","유","술","해","자","축","인","묘","진","사","오","미"]
+    a = year % 12
+    //a + 8 > 11 ? a = ( a + 8 ) % 12 : a = a + 8
+    띠 = animal[a]
+
+
+    alert(`${year}년에 태아났다면 ${간}${띠}년 입니다.`)
+</script>
