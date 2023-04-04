@@ -54,7 +54,7 @@ console.log("9 ==> ", fruits6)
 fruits6.splice(1, 1, "포도")
 console.log("10 ==> ", fruits6)
 
-//3-5. slice (시작위치, 마지막위치 + 1 )
+//3-6. slice (시작위치, 마지막위치 + 1 )
 let fruits7 = ["사과", "바나나", "키위"];
 console.log("11 ==> ", fruits7)
 let slicedFruits = fruits7.slice(1,2)
