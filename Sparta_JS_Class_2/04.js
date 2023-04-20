@@ -9,23 +9,21 @@
 //(2) 함수를 인자로 다른 함수에 전달할 수가 있다.
 //(2)-1 콜백함수 : 매개변수로써 쓰이는 함수
 //(2)-2 고차함수 : 함수를 인자로 받거나 return하는 함수
-function callFunction (func) {
-
-    // 매겨변수로 받은 func가 사실 함수다
-    func();
-
+function callFunction(func) {
+  // 매겨변수로 받은 func가 사실 함수다
+  func();
 }
 const sayHello = function () {
-    console.log("Hello!");
+  console.log("Hello!");
 };
 
-callFunction (sayHello);
+callFunction(sayHello);
 
 //(3) 함수를 반환할 수 있다.
 function createAdder(num) {
-    return function () {
-        return x + num;
-    }
+  return function () {
+    return x + num;
+  };
 }
 
 const addFive = createAdder(5);

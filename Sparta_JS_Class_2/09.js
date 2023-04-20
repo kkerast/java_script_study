@@ -17,7 +17,7 @@ for ( const value of myMap.values()){
 
 console.log("============================")
 
-for ( const entry of myMap.entries()){
+for ( const entry of my.entries()){
     console.log(entry);
 }
 
